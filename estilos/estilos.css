@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(245, 159, 209);
+
+}
+
+                            /*ENCABEZADO*/
+header {
+    border-bottom: 3px solid black;
+    text-align: center center;
+    background-image: url(../imagenes/OM.jpeg);
+    height: 300px;
+    background-color: white;
+    
+}
+.terapiah1 {
+    display: flex;
+    gap: 25px;
+    grid-gap: 25px;
+    text-decoration: underline;
+    width: 490px;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-left: 700px;
+
+}
+
+                            /*ENCABEZADO*/
+
+                             /*NAVEGADOR*/
+.logo {
+    width: 200px;
+    
+}
+
+.navlogo {
+    display: flex;
+    gap: 10px;
+    grid-gap: 10px;
+    background-color: rgb(178, 227, 250);
+    align-items: center;
+
+}
+
+.terapiasnav {
+    list-style: none;
+    display: flex;
+    padding: 20px;
+    width: 100%;
+    gap: 25px;
+    grid-gap: 25px;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: black;
+}
+
+.active {
+    text-decoration: underline double;
+}
+
+a:hover {
+    text-decoration: underline double;
+}
+
+                            /*NAVEGADOR*/
+
+
+                            /* MAIN */
+main {
+    margin: 20px;
+    padding: 20px;
+}
+
+.contenedor {
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr ;
+    grid-template-areas: 
+       "caja1   caja2     caja3  "
+       "caja1   caja2     caja3  ";
+}
+
+.caja1 {
+    grid-area: caja1;
+}
+.caja2 {
+    grid-area: caja2;
+}
+.caja3 {
+    grid-area: caja3;
+}
+.sobremi {
+    display: grid;
+    gap: 20px;
+text-align: center;
+}
+.sobremih1 {
+    text-decoration: underline double;
+}
+                              /* MAIN */
+
+
+.areax {
+    margin: 20px;
+    border: 4px solid #333;
+    border-radius: 10px;
+}
+
+.predio {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+                            /*MADITACIONES*/
+.meditacion1,
+.meditacion2,
+.meditacion3 {
+    border-radius: 20px;
+    background-color: rgb(247, 224, 243);
+    display: block;
+    margin-bottom: 10%;
+    display: flex;
+    gap: 10px;
+}
+
+.titulovideo {
+    text-align: center;
+    text-decoration: underline double;
+    margin: 15px 20px;
+}
+
+                           /*MADITACIONES*/
+
+                           /*formulario*/
+form {
+    margin-top: 20px;
+    margin-left: 528px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: black;
+}
+
+                            
+input[type="text"],
+textarea {
+    display: block;
+    width: 50%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+input[type="email"],
+textarea {
+    display: block;
+    width: 50%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.botones {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+                            /*formulario*/
+
+
+@media (max-width:1023px) {
+    /*header*/
+    .navlogo {
+        flex-direction: column;
+    }
+}
