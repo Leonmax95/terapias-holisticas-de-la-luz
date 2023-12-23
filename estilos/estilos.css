@@ -84,30 +84,38 @@ main {
     display: grid;
     width: 100%;
     height: 100vh;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr ;
     grid-template-rows: 1fr 1fr ;
-    grid-template-areas: 
-       "caja1   caja2     caja3  "
-       "caja1   caja2     caja3  ";
+  
 }
 
 .caja1 {
-    grid-area: caja1;
+    grid-column: 1/4;
+    text-align: center;
+    background-color: antiquewhite;
 }
 .caja2 {
-    grid-area: caja2;
+    grid-column:1/1;
+    text-align: center;
+    background-color: red;
 }
 .caja3 {
-    grid-area: caja3;
+    grid-column: 2/3;
+    text-align: center;
+    background-color: rgb(235, 231, 42);
 }
-.sobremi {
-    display: grid;
-    gap: 20px;
-text-align: center;
+.caja4 {
+    grid-column: 1/4;
+    justify-items: center;
+    text-align: center;
+
 }
 .sobremih1 {
-    text-decoration: underline double;
+text-align: center;
+text-decoration: underline double;
 }
+
+
                               /* MAIN */
 
 
